@@ -22,7 +22,7 @@ pipeline {
         stage('Docker_push') {
             steps {
                 sh 'sudo docker tag htmlpage lijitijil/htmlpage'
-                sh 'docker login -u lijitijil -p lijijohny21'
+                sh 'docker login -u lijitijil -password-stdin lijijohny21'
                 sh 'sudo docker push lijitijil/htmlpage'
             }
         }
