@@ -23,7 +23,8 @@ pipeline {
             steps {
                 sh 'sudo docker tag htmlpage lijitijil/htmlpage'
                 sh 'docker login -u lijitijil -p lijijohny21'
-                sh 'sudo docker push lijitijil/htmlpage'
+                sh 'docker push lijitijil/htmlpage'
+                
             }
         }
     }
